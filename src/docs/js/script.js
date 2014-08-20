@@ -1,0 +1,1 @@
+Flatdoc.run({ fetcher: Flatdoc.file('all_docs.md') });
