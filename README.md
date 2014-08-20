@@ -4,7 +4,7 @@ This boilerplate's main highlight is that it provides you with a "live front-end
 
 Enjoy the beauty of Jeet, Stylus
 
-- Technologies: 
+- Tools: 
     - Gulp tasks for everything
     - Stylus
 	    - Jeet
