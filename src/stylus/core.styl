@@ -1,25 +1,31 @@
+@import './reset';
+
 @import 'jeet'
 @import 'rupture'
 @import 'typographic'
 @import 'nib'
 
-@import './reset';
-@import './libs/ab/typography';
-
-base-font-size = 14px
-rupture.enable-em-breakpoints = true
-
+@import './typography';
 
 @import './global/layout_base';
 
-@import './libs/ab/abutils';
-@import './libs/ab/anim';
+@import './modules/footer';
 
+@import './libs/ab/anim';
+@import './libs/ab/abutils';
+
+
+// values for rupture
+base-font-size 					= 10px
+rupture.enable-em-breakpoints 	= true
+
+// activate wireframe
 // edit()
 
 body
 	color: #8D8D8D
 	background-color: #F5F5F5
+
 
 .main-content-container
 	.inner-content-container
@@ -28,11 +34,3 @@ body
 			border-top 3px solid #1082F6
 			padding-bottom: 4%;
 			padding-top: 6%;
-
-.footer-container
-	opacity 0.8
-	padding-bottom 3%
-	p
-		font-size: 1.4rem;
-	&:hover
-		opacity 1
