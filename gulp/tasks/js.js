@@ -10,6 +10,7 @@ var	uglify 		   = require('gulp-uglify');
 var watchify     = require('watchify');
 var bundleLogger = require('../util/bundleLogger');
 var handleErrors = require('../util/handleErrors');
+var striplog     = require('gulp-strip-debug');
 
 gulp.task('js', ['environmentCheck'], function() {
 
@@ -28,6 +29,7 @@ gulp.task('js', ['environmentCheck'], function() {
     .bundle()
     .on('error', handleErrors)
     .pipe(source('bundle.js'))
+    .pipe(striplog())
     .pipe(gulpif( global.ENV === 'production', streamify(uglify({ mangle: global.ENV === 'production' }))))
     .pipe(gulp.dest(global.outputDir + global.dataPath + '/js'))
     .pipe(connect.reload())

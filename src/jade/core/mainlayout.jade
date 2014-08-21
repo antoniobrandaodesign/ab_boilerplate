@@ -24,7 +24,7 @@ html
 		meta(name='apple-mobile-web-app-capable', content='yes')
 		meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
 
-		block specific_head
+		block page_head
 	
 		script(src='http://www.wurfl.io/wurfl.js')
 		script(src="resources/js/bundle.js")
@@ -35,9 +35,11 @@ html
 		body
 			//- +mobileNav
 			
-			div.main-content-container
-				div.main-area.inner-content-container
+			div.block-container.main-content-block
+				div.block-container-inner
 					block content
-						
-			include footer
+			
+			div.block-container.footer-container
+				div.block-container-inner						
+					include footer
 					

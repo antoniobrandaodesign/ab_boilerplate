@@ -520,13 +520,18 @@
 	"buffers":
 	[
 		{
-			"contents": "{\n	\"folders\":\n	[\n		{\n			\"follow_symlinks\": true,\n			\"path\": \".\"\n		}\n	]\n}\n",
-			"file": "styljeet-boilerplate.sublime-project",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "gulp/tasks/js.js",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 1356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulp/tasks/default.js",
+			"settings":
+			{
+				"buffer_size": 3182,
 				"line_ending": "Unix"
 			}
 		}
@@ -641,6 +646,38 @@
 	},
 	"file_history":
 	[
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/jade/core/mainlayout.jade",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/jade/index.jade",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app/modules/footer.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app/core.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app/pages/home.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app/global/layout_base.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/jade/core/footer.jade",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/jade/core/mixins.jade",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/jade/templates/new_page.jade",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app/typography/index.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app/reset/index.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/gulp/tasks/stylus.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/gulp/index.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/gulp-util/lib/isNull.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/flatdoc/History.md",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/jquery/src/var/hasOwn.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/browserify/node_modules/http-browserify/example/json-stream/node_modules/JSONStream/test/multiple_objects_error.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/gulp-jade/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/example/meat.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/browserify/node_modules/http-browserify/example/json-stream/node_modules/JSONStream/examples/all_docs.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/browserify/node_modules/http-browserify/example/json-stream/node_modules/JSONStream/readme.markdown",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/gulp/tasks/js.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/gulp/tasks/jade.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/package.json",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/reset/reset.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/app",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/pages/home.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/modules/footer.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/typographic/typographic/_font-stacks.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src/stylus/libs/ab/typography.styl",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/browserify/node_modules/readable-stream/lib/_stream_transform.js",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/node_modules/jeet/scss/jeet/_settings.scss",
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/styljeet-boilerplate.sublime-project",
 		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/styljeet-boilerplate/src/stylus/project_specific/home.styl",
 		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/styljeet-boilerplate/README.md",
 		"/Users/antoniobrandao/Dropbox/WEBROOT/abd/styljeet-boilerplate/src/stylus/core.styl",
@@ -736,49 +773,18 @@
 		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/docs/plugins/flowelement/flowelement.js",
 		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/README.md",
 		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/jade/index.jade",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/libs/ab/mobile.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/builds/development/v5/docs/index.json",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/libs/ab/device-control/index.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/abv5/abv5.coffee",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/libs/ab/device-control",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/browser-sync/node_modules/resp-modifier/test/fixtures/json-masquerading-as.html",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/teest/index.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/core.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/abv5/router.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-stylus/examples/css/compressed.styl",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-stylus/node_modules/.bin/stylus",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-stylus/.npmignore",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-stylus/LICENSE",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-streamify/.npmignore",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-sourcemaps/index.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-connect/.idea/gulp-connect.iml",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/gulpfile.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/gulp/tasks/prod.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-less/node_modules/less/lib/less/join-selector-visitor.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/map-key/node_modules/underscore.string/test/test_underscore/collections.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-notify/node_modules/lodash.template/node_modules/lodash.keys/node_modules/lodash._shimkeys/node_modules/lodash._objecttypes/LICENSE.txt",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/map-key/node_modules/underscore.string/test/test_underscore/objects.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/autoprefixer-stylus/node_modules/autoprefixer/lib/keyframes.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-less/node_modules/less/test/less/errors/multiple-guards-on-css-selectors.less",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-svgo/node_modules/svgo/plugins/moveGroupAttrsToElems.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/browserify/test/bundle_external_global.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/gulp-less/node_modules/less/node_modules/clean-css/lib/selectors/empty-removal.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/builds/development/css/core.css",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/axis-css/server",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/gulp/util/bundleLogger.js",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/stylus/libs/reset.styl",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/node_modules/axis-css/axis/reset.styl",
-		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/less/libs/elements.less"
+		"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/js/libs/ab/mobile.js"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 95.0,
 		"where_history":
 		[
+			"/Users/antoniobrandao/Dropbox/WEBROOT/abd/ab_boilerplate/src",
 			"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src",
 			"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/src/stylus",
 			"/Users/antoniobrandao/Dropbox/WEBROOT/abv5/gulp/tasks",
@@ -845,6 +851,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scripts",
+			"// ",
+			".main-content",
+			"main-",
+			"src/stylus/pages",
+			"project_specific",
+			"@",
+			"Titillium",
 			"➜ ",
 			"➜",
 			"ABv5",
@@ -964,15 +978,7 @@
 			"eos",
 			"var",
 			"// li \n							//	a(href='#') ADD-ONS",
-			"\"",
-			"\": \"",
-			"\": \"*\",",
-			"changed",
-			"placeholder",
-			"sizes",
-			"href",
-			"return View::make",
-			"Route::get(\"/buy"
+			"\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -991,24 +997,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "styljeet-boilerplate.sublime-project",
+					"file": "gulp/tasks/js.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 73,
+						"buffer_size": 1356,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								994,
+								994
 							]
 						],
 						"settings":
@@ -1176,9 +1182,99 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulp/tasks/default.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1235,6 +1331,18 @@
 		"selected_items":
 		[
 			[
+				"js.js",
+				"gulp/tasks/js.js"
+			],
+			[
+				"mainlay",
+				"src/jade/core/mainlayout.jade"
+			],
+			[
+				"indexjade",
+				"src/jade/index.jade"
+			],
+			[
 				"_stack",
 				"node_modules/typographic/typographic/_font-stacks.styl"
 			],
@@ -1277,10 +1385,6 @@
 			[
 				"gulp-styluscompress",
 				"node_modules/gulp-stylus/examples/css/compressed.styl"
-			],
-			[
-				"js.js",
-				"gulp/tasks/js.js"
 			],
 			[
 				"core.css",
@@ -1737,14 +1841,6 @@
 			[
 				"larve",
 				"app/storage/logs/laravel.log"
-			],
-			[
-				"larave",
-				"app/storage/logs/laravel.log"
-			],
-			[
-				"larvel",
-				"app/storage/logs/laravel.log"
 			]
 		],
 		"width": 0.0
@@ -1784,7 +1880,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 233.0,
+	"side_bar_width": 397.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

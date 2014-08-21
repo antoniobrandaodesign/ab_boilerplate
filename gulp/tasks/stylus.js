@@ -19,7 +19,7 @@ var print           = require('gulp-print');
 
 gulp.task('stylus', ['environmentCheck'], function () 
 {  
-	gulp.src('./src/stylus/pages/*.styl')
+	gulp.src('./src/stylus/app/pages/*.styl')
 	.pipe( plumber( handleErrors ) )
 	.pipe(changed( global.outputDir + global.dataPath + '/css', {extension: '.css'}))
 	.pipe(sourcemaps.init())
@@ -35,7 +35,7 @@ gulp.task('stylus', ['environmentCheck'], function ()
 
 gulp.task('stylus_all', ['environmentCheck'], function () 
 {  
-	gulp.src('./src/stylus/pages/*.styl')
+	gulp.src('./src/stylus/app/pages/*.styl')
 	.pipe( plumber( handleErrors ) )
 	.pipe(sourcemaps.init())
 	.pipe(stylus({ 
@@ -49,7 +49,7 @@ gulp.task('stylus_all', ['environmentCheck'], function ()
 
 gulp.task('stylus_prod', ['setProduction'], function () 
 {  
-	gulp.src('./src/stylus/pages/*.styl')
+	gulp.src('./src/stylus/app/pages/*.styl')
 	.pipe( plumber( handleErrors ) )
 	.pipe(stylus({
 			compress: true,

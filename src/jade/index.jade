@@ -1,13 +1,16 @@
+- // extends mainlayout.jade
 extends core/mainlayout
 
+- // for mainlayout meta section
 block vars
 	- var title='AB Boilerplate Home'
 
-block specific_head
+- // for mainlayout links & scripts section
+block page_head
 	link(rel='stylesheet', href='resources/css/home.css')
 
+- // for mainlayout content block
 block content
-
 	div.header
 		h1 AB Boilerplate
 

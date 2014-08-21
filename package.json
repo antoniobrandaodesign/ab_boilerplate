@@ -60,6 +60,7 @@
     "stylus": "~0.48.0",
     "chalk": "~0.5.1",
     "gulp-rename": "~1.2.0",
-    "autoprefixer-stylus": "~0.2.0"
+    "autoprefixer-stylus": "~0.2.0",
+    "gulp-strip-debug": "~1.0.0"
   }
 }
