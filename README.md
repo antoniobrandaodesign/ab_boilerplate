@@ -30,7 +30,8 @@ This boilerplate's main highlight is that it provides you with a "live front-end
 
     1. install Node.js
     2. npm install -g gulp
-    3. npm install (inside project folder)
+    3. clone this repository
+    4. npm install (inside project folder)
 
 # Running
 
