@@ -15,8 +15,7 @@
 /*!
 * Module dependencies.
 */
-var $               = require('jquery');
-var device_control  = require('../libs/ab/device-control');
+var $      = require('jquery');
 var utils  = require('ab-js-utils');
 // var svg         = require("./libs/ab/svg-processor.js");
 
