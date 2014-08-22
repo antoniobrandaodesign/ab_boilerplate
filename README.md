@@ -18,13 +18,16 @@ This boilerplate's main highlight is that it provides you with a "live front-end
 - Features:
     - Live development (instant CSS injection, and auto browser reload for HTML and JS)
     - Real-time syncronization through all connected devices with BrowserSync
-    - Output processed file names to console
-    - Source maps (except Stylus for now)
-    - Error reporting
+    - JavaScript source maps
+    - Stylus source maps (SOON!)
+    - FTP upload task for FTP deployment, with prompt for username and password
     - Minification of images (including SVGs)
+    - Automatic clean-up of build folder before creating a build
+    - Output processed file names to console
+    - Error reporting
+    - Commands to create Development and production builds
+    - Documentation generation in Markdown format for Flatdoc
     - Handy information task (simply run "gulp")
-	- Commands to create development and production builds
-    - Documentation generation
 
 # Installing
 
@@ -64,6 +67,9 @@ Takes all images from ./src/files/images (recursively), minifies them and copies
 
 ### gulp browserSync
 Generates URLs to serve the website locally and in the local network - syncs data and interaction
+
+### gulp ftp
+Upload production build to FTP. Entering hostname in gulp task is necessary. Username and Password will be prompted in the console
 
 ### gulp build_dev
 - Creates a DEVELOPMENT "build" using the following tasks: stylus_all, jade_all, js, images
