@@ -1,8 +1,7 @@
 var gulp         = require('gulp');
-var clean        = require('gulp-clean');
+var rimraf        = require('rimraf');
 
-gulp.task('clean', ['environmentCheck'], function () 
+gulp.task('clean', ['environmentCheck'], function (cb) 
 {
-  return gulp.src(global.outputDir, {read: false})
-    .pipe(clean());
+  	rimraf(global.outputDir, cb);
 });

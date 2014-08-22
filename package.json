@@ -63,6 +63,8 @@
     "chalk": "~0.5.1",
     "gulp-rename": "~1.2.0",
     "autoprefixer-stylus": "~0.2.0",
-    "gulp-strip-debug": "~1.0.0"
+    "gulp-strip-debug": "~1.0.0",
+    "gulp-rimraf": "~0.1.0",
+    "rimraf": "~2.2.8"
   }
 }
