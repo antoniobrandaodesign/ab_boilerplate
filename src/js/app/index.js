@@ -17,6 +17,7 @@
 */
 var $               = require('jquery');
 var device_control  = require('../libs/ab/device-control');
+var utils  = require('ab-js-utils');
 // var svg         = require("./libs/ab/svg-processor.js");
 
 /*!
@@ -41,7 +42,13 @@ window.App =
  // Router: {}
 };
 
+App.form_factor = utils.device.form_factor();
+App.is_mobile   = utils.device.is_mobile();
 
+console.log('APP form_factor : ' + App.form_factor);
+console.log('APP is_mobile   : '+ App.is_mobile);
+
+            
 module.exports = {
 
     /**
@@ -64,11 +71,13 @@ module.exports = {
 
         $( document ).ready( function() 
         {
-            App.form_factor = device_control.form_factor();
-            App.is_mobile   = device_control.is_mobile();
+            alert('afadf');
+            
+            // App.form_factor = utils.device.form_factor();
+            // App.is_mobile   = utils.device.is_mobile();
 
-            console.log('APP form_factor : ' + App.form_factor);
-            console.log('APP is_mobile   : '+ App.is_mobile);
+            // console.log('APP form_factor : ' + App.form_factor);
+            // console.log('APP is_mobile   : '+ App.is_mobile);
 
             if (App.is_mobile)
             {
