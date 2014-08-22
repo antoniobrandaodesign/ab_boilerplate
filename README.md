@@ -1,4 +1,4 @@
-## AB Boilerplate
+## AB HTML6 Boilerplate
 
 This boilerplate's main highlight is that it provides you with a "live front-end development mode" for those of us who like DRY syntax (Jade, Stylus) with automatic browser reloads / css injection, and syncronisation between any device connected to the given URL in the local network.
 
