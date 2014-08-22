@@ -48,3 +48,8 @@ gulp.task('js', function() {
 
   return bundle();
 });
+
+gulp.task('js_prod', ['setProduction'], function() 
+{
+  gulp.start('js');
+});
