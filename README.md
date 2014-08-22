@@ -31,7 +31,8 @@ This boilerplate's main highlight is that it provides you with a "live front-end
     1. install Node.js
     2. npm install -g gulp
     3. clone this repository
-    4. npm install (inside project folder)
+    4. sudo npm install (inside project folder) ("sudo" seems to be necessary for some modules)
+    5. Sometimes "npm install" fails to install everything. Run "gulp" to check and if some module is missing, copy it's name and run "npm install missing-module"
 
 # Running
 
