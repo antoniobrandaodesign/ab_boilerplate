@@ -1,33 +1,54 @@
 ## AB HTML6 Boilerplate
 
-This boilerplate's main highlight is that it provides you with a "live front-end development mode" for those of us who like DRY syntax (Jade, Stylus) with automatic browser reloads / css injection, and syncronisation between any device connected to the given URL in the local network.
+This is my current development setup.
+
+Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-based project with ready-to-use tasks.
+
+Note: HTML6 doesn't exist (yet). This project does not contain HTML6. I put 'HTML6' in the title for fun, and in a way because I feel this setup is a big step ahead of the typical (bootstrap3-ish) html5 development setup. 
+
+Bootstrap 3 is bad practice. Just as style should be separated from markup, layout logic should be separated from markup. It is not good practice to enforce a responsive behaviour to a piece of html. Do not pollute your html with .col-md2.col-lg4.col-etc. You shouldn't even be messing with html files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to acomplish beautifully.
+
+Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
+
+These layout flows can bundled in the form of mixins. Mixins in turn can be applied to any html block. Many different mixins can be applied to the same html block, changing the behaviour of the html, without having to edit the html. One of the tricks is to create standardised html blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
+
+This setup's main highlight is that it provides you with a "live html development mode", easy builds, structure, and really clean minimal code.
+
+| No CoffeeScript is not included to match the Jade/Stylus style. I might jump into the CoffeeScript boat someday, but I still frown at the '=>'s
+
 
 - Tools: 
-    - Gulp tasks for everything
+    - Gulp tasks for everything, neatly organised
     - Stylus
 	    - Jeet
 	    - Rupture
 	    - Typographic
 	    - Axis CSS
         - Nib
-        - Source Maps - not working yet
     - Jade
     - Browserify (with JavaScript source maps)
+    - Optional CoffeeScript
     - BrowserSync
 
 - Features:
-    - Live development (instant CSS injection, and auto browser reload for HTML and JS)
-    - Real-time syncronization through all connected devices with BrowserSync
-    - JavaScript source maps
-    - Stylus source maps (SOON!)
+    - Live development (instant CSS injection, and auto browser reload for HTML and JS) & real-time syncronization through all local-network devices with BrowserSync
+    - Easily call tasks to create either Development and Production builds
+    - JavaScript source maps (automatically absent in production tasks)
+    - JavaScript is compressed and obfuscated in production tasks
+    - JavaScript is readable in production tasks
+    - CSS is compressed in production tasks
+    - CSS is readable in development tasks
+    - CSS Autoprefixer (down to IE7)
+    - HTML is compressed in production tasks
+    - HTML is readable in development tasks
+    - Automatic minification of images (including SVGs)
+    - Automatic Documentation generation in Markdown format for Flatdoc
     - FTP upload task for FTP deployment, with prompt for username and password
-    - Minification of images (including SVGs)
-    - Automatic clean-up of build folder before creating a build
-    - Output processed file names to console
-    - Error reporting
-    - Commands to create Development and production builds
-    - Documentation generation in Markdown format for Flatdoc
-    - Handy information task (simply run "gulp")
+    - Automatic clean-up of build folders before creating builds
+    - Tasks print processed file names to console
+    - Error reporting and handling
+    - Handy information task (simply run "gulp" in project folder to see info & available tasks)
+    - SOON: Stylus source maps
 
 # Installing
 
