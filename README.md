@@ -1,6 +1,6 @@
 ## AB HTML6 Boilerplate
 
-This is my current development setup.
+This is my current html development setup.
 
 Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-based project with ready-to-use tasks.
 
