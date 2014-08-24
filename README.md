@@ -10,7 +10,7 @@ Bootstrap 3 is bad practice. Just as style should be separated from markup, layo
 
 Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
-These layout flows can bundled in the form of mixins. One Mixin can be applied to many html block. As many different mixins can be applied to the same html block. This enables us to change the behaviour of html blocks without ever having to edit the html itself. One of the tricks is to create standardised html blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
+These layout flows can bundled in the form of mixins. One mixin can be applied to many html block. As many different mixins can be applied to the same html block. This enables us to change the behaviour of html blocks without ever having to edit the html itself. One of the tricks is to create standardised html blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
 
 > This setup's main highlight is that it provides you with a "live html development mode", easy builds, structure, and really clean minimal code.
 
@@ -34,9 +34,9 @@ These layout flows can bundled in the form of mixins. One Mixin can be applied t
         - Optional [CoffeeScript](http://coffeescript.org)
 
 - Features:
-    - Live development (instant CSS injection, and auto browser reload for HTML and JS) with gulp-watch
-    - Test the app in any device in your local network with BrowserSync
-    - Real-time interaction syncronization between all connected devices with BrowserSync
+    - Live development (instant CSS injection, and auto browser reload for HTML and JS)
+    - Test the app in any device in your local network
+    - Real-time interaction syncronization between all connected devices
     - Easily call tasks to create either Development and Production builds
     - JavaScript
         - Source maps (automatically absent in production tasks)
