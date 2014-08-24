@@ -4,6 +4,8 @@ This is my current HTML Front-end development setup.
 
 Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-based project with ready-to-use tasks.
 
+This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
+
 > Note: HTML6 doesn't exist (yet). This project does not contain HTML6. I put 'HTML6' in the title for fun, and in a way because I feel this setup is a big step ahead of the typical (bootstrap3-ish) HTML5 development setup. 
 
 Why Jeet? Because just as style should be separated from markup, layout logic should be separated from markup. Therefore Bootstrap 3 is bad practice (sorry Bootstrap lovers). It is easy to understand why is it not good practice to enforce a specific responsive behaviour to a piece of HTML. In Bootstrap, everytime we want to change responsive behaviour, we need to edit HTML files, and that doesn't make sense. Do not pollute your HTML with .col-md2.col-lg4.col-etc classes. You shouldn't even be messing with HTML files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
@@ -21,8 +23,6 @@ Jeet + Rapture example: How to make a grid that shows 1 element por row in mobil
             col(1/3)
 
 That is so simple and readable I'm pretty sure you can understand it even if you can't code. Now, these layout flows can bundled in the form of mixins. The same mixin can be applied to many HTML blocks. The same way many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without having to edit the HTML itself. It's brilliant and super clean. One of the tricks is to create standardised HTML blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
-
-This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
 I will be adding information aobut the Jade templates structure later.
 
