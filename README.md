@@ -76,20 +76,44 @@ I will be adding information about the Jade templates structure later.
 # Installing
 
     1. install Node.js
-    2. npm install -g gulp
+    2. run "sudo npm install -g gulp" in the console  (sudo is necessary because "-g" is a global installation)
     3. clone this repository
-    4. sudo npm install (inside project folder) ("sudo" seems to be necessary for some modules)
-    5. Sometimes "npm install" fails to install everything. Run "gulp" to check and if some module is missing, if an error pops up check if it states some missing module. Copy the module's name and run "npm install missing-module --save"
+    4. run "sudo npm install" inside the project folder ("sudo" seems to be necessary for some modules)
+    5. sometimes running "npm install" fails to install everything. 
+        5a. Run "gulp", and if some module is missing, an error will pop up specifying the name of the missing module. 
+        5b. Copy the module's name and run "npm install the-missing-module-name --save". 
+        5c. Repeat the process for each missing module if necessary.
 
-# Running
+# Running (first time)
 
-    A. Usually what you want is to use "gulp watch"
-    B. Run "gulp" in the console to see available
+    A. when running the first time, run first "gulp build_dev" to make a build and have something to work with
+    B. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
+    C. open that URL in your browser. you should see a simple responsive website
+    D. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
+    E. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
+    F. run "gulp" in the console to see available tasks
+
+# Running (normally)
+
+    A. normally when starting work, what you want is to run "gulp watch" and rock on
+    B. run "gulp" in the console to see available tasks
 
 
-----------
-# Gulp tasks  
-----------
+### Development and Production tasks: difference
+
+- Production
+    - JavaScript files are compressed and obfuscated
+    - CSS files are compressed
+    - HTML files are compressed
+    - JavaScript and CSS files are compiled WITHOUT source maps
+- Development
+    - JavaScript files are compiled WITH source maps
+    - CSS files are compiled WITH source maps
+    - JavaScript and CSS files are readable, NOT compressed
+    - HTML files are readable, NOT compressed
+
+
+# Available Gulp tasks  
 
 ### gulp
 - Displays information and available tasks
@@ -121,15 +145,7 @@ I will be adding information about the Jade templates structure later.
 - Upload production build to FTP. Entering hostname in gulp task is necessary. Username and Password will be prompted in the console
 
 ### gulp build_dev
-- Creates a DEVELOPMENT "build" using the following tasks: stylus_all, jade_all, js, images
-    - JS and CSS files are compiled WITH source maps
-    - JS and CSS files are compiled WITH source maps
-    - JS and CSS files are readable, NOT compressed
-    - Compiled HTML is NOT compressed
+- Creates a DEVELOPMENT build
 
 ### gulp build_prod
-- Creates a PRODUCTION "build" using the following tasks: stylus_prod, jade_prod, js, images
-    - JS and CSS files are compiled WITHOUT source maps
-    - JS files are compressed and obfuscated
-    - CSS files are compressed
-    - Compiled HTML is compressed
+- Creates a PRODUCTION build
