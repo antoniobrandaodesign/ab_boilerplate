@@ -39,13 +39,14 @@ These layout flows can bundled in the form of mixins. One mixin can be applied t
     - Real-time interaction syncronization between all connected devices
     - Easily call tasks to create either Development and Production builds
     - JavaScript
-        - Source maps (automatically absent in production tasks)
-        - Is compressed and obfuscated in production tasks
-        - Is readable in production tasks
+        - Compressed and obfuscated in production tasks
+        - Readable in development tasks
+        - Source maps in development tasks
     - CSS
         - Compressed in production tasks
         - Readable in development tasks
         - Autoprefixer (down to IE7)
+        - (SOON) Source maps in development tasks
     - HTML
         - Predefined structure for basic building blocks
         - Compressed in production tasks
@@ -57,7 +58,6 @@ These layout flows can bundled in the form of mixins. One mixin can be applied t
     - Tasks print processed file names to console
     - Error reporting and handling
     - Handy information task (simply run "gulp" in project folder to see info & available tasks)
-    - SOON: Stylus source maps
 
 # Installing
 
@@ -70,12 +70,12 @@ These layout flows can bundled in the form of mixins. One mixin can be applied t
 # Running
 
     A. Usually what you want is to use "gulp watch"
-    B. Run "gulp" to see available options
+    B. Run "gulp" in the console to see available
 
 # Gulp tasks  
 
 ### gulp
-Display information 0and available tasks
+Displays information and available tasks
 
 ### gulp watch
 Starts 'live' front-end development environment
