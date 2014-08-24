@@ -14,7 +14,7 @@ Why Jeet? Because just as style should be separated from markup, layout logic sh
 
 Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
-Jeet + Rapture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop ?
+Jeet + Rupture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop ?
 
     .grid-element
         +mobile()
