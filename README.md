@@ -10,10 +10,23 @@ Why Jeet? Because just as style should be separated from markup, layout logic sh
 
 Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
-These layout flows can bundled in the form of mixins. One mixin can be applied to many HTML block. As many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without ever having to edit the HTML itself. One of the tricks is to create standardised HTML blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
+Jeet + Rapture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop ?
+
+    .grid-element
+        +mobile()
+            col(1)
+        +tablet()
+            col(1/2)
+        +desktop()
+            col(1/3)
+
+That is so simple and readable I'm pretty sure you can understand it even if you can't code. Now, these layout flows can bundled in the form of mixins. The same mixin can be applied to many HTML blocks. The same way many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without having to edit the HTML itself. It's brilliant and super clean. One of the tricks is to create standardised HTML blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
 
 This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
+I will be adding information aobut the Jade templates structure later.
+
+Please make questions in the Issues page. Contributions to improve this setup are very welcome!
 
 - Tools: 
     - Workflow
