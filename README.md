@@ -75,33 +75,33 @@ These layout flows can bundled in the form of mixins. One mixin can be applied t
 # Gulp tasks  
 
 ### gulp
-Displays information and available tasks
+- Displays information and available tasks
 
 ### gulp watch
-Starts 'live' front-end development environment
-Saved files will be compiled on the fly
-Changes are injected in the browser automatically
+- Starts 'live' front-end development environment
+- Saved files will be compiled on the fly
+- Changes are injected in the browser automatically
 
 ### gulp stylus_all
-Compiles all Stylus files in development mode: WITH source maps & not minified
+- Compiles all Stylus files in development mode: WITH source maps & not minified
 
 ### gulp stylus_prod
-Compiles all Stylus files in production mode - WITHOUT source maps & minified
+- Compiles all Stylus files in production mode - WITHOUT source maps & minified
 
 ### gulp js
-Compiles all JS files in development mode: WITH source maps & not minified
+- Compiles all JS files in development mode: WITH source maps & not minified
 
 ### gulp js_prod
-Compiles all JS files in production mode: WITHOUT source maps & minified
+- Compiles all JS files in production mode: WITHOUT source maps & minified
 
 ### gulp images
-Takes all images from ./src/files/images (recursively), minifies them and copies them to the dev build_folder/images
+- Takes all images from ./src/files/images (recursively), minifies them and copies them to the dev build_folder/images
 
 ### gulp browserSync
-Generates URLs to serve the website locally and in the local network - syncs data and interaction
+- Generates URLs to serve the website locally and in the local network - syncs data and interaction
 
 ### gulp ftp
-Upload production build to FTP. Entering hostname in gulp task is necessary. Username and Password will be prompted in the console
+- Upload production build to FTP. Entering hostname in gulp task is necessary. Username and Password will be prompted in the console
 
 ### gulp build_dev
 - Creates a DEVELOPMENT "build" using the following tasks: stylus_all, jade_all, js, images
