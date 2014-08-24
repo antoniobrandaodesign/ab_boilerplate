@@ -14,33 +14,44 @@ These layout flows can bundled in the form of mixins. Mixins in turn can be appl
 
 This setup's main highlight is that it provides you with a "live html development mode", easy builds, structure, and really clean minimal code.
 
-| No CoffeeScript is not included to match the Jade/Stylus style. I might jump into the CoffeeScript boat someday, but I still frown at the '=>'s
+> No CoffeeScript is not included to match the Jade/Stylus style. I might jump into the CoffeeScript boat someday, but I still frown at the '=>'s
 
 
 - Tools: 
-    - Gulp tasks for everything, neatly organised
-    - Stylus
-	    - Jeet
-	    - Rupture
-	    - Typographic
-	    - Axis CSS
-        - Nib
-    - Jade
-    - Browserify (with JavaScript source maps)
-    - Optional CoffeeScript
-    - BrowserSync
+    - Workflow
+        - [Gulp](http://gulpjs.com) tasks for everything, neatly organised
+        - [Browsersync](http://browsersync.io/)
+    - CSS
+        - [Stylus](http://learnboost.github.io/stylus/)
+        - [Jeet](http://jeet.gs)
+        - [Rupture](http://jenius.github.io/rupture/)
+        - [Typographic](https://github.com/corysimmons/typographic)
+        - [Axis CSS](http://roots.cx/axis/)
+        - [Nib](http://visionmedia.github.io/nib/)
+        - [Autoprefixer](https://www.npmjs.org/package/autoprefixer-stylus)
+    - HTML
+        - [Jade](http://jade-lang.com)
+    - JavaScript
+        - [Browserify](http://browserify.org/) (with JavaScript source maps minification and obfuscation)
+        - Optional [CoffeeScript](http://coffeescript.org)
 
 - Features:
-    - Live development (instant CSS injection, and auto browser reload for HTML and JS) & real-time syncronization through all local-network devices with BrowserSync
+    - Live development (instant CSS injection, and auto browser reload for HTML and JS) with gulp-watch
+    - Test the app in any device in your local network with BrowserSync
+    - Real-time interaction syncronization between all connected devices with BrowserSync
     - Easily call tasks to create either Development and Production builds
-    - JavaScript source maps (automatically absent in production tasks)
-    - JavaScript is compressed and obfuscated in production tasks
-    - JavaScript is readable in production tasks
-    - CSS is compressed in production tasks
-    - CSS is readable in development tasks
-    - CSS Autoprefixer (down to IE7)
-    - HTML is compressed in production tasks
-    - HTML is readable in development tasks
+    - JavaScript
+        - Source maps (automatically absent in production tasks)
+        - Is compressed and obfuscated in production tasks
+        - Is readable in production tasks
+    - CSS
+        - Compressed in production tasks
+        - Readable in development tasks
+        - Autoprefixer (down to IE7)
+    - HTML
+        - Predefined structure for basic building blocks
+        - Compressed in production tasks
+        - Readable in development tasks
     - Automatic minification of images (including SVGs)
     - Automatic Documentation generation in Markdown format for Flatdoc
     - FTP upload task for FTP deployment, with prompt for username and password
@@ -63,8 +74,10 @@ This setup's main highlight is that it provides you with a "live html developmen
     A. Usually what you want is to use "gulp watch"
     B. Run "gulp" to see available options
 
-
 # Gulp tasks  
+
+### gulp
+Display information 0and available tasks
 
 ### gulp watch
 Starts 'live' front-end development environment
