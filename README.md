@@ -10,11 +10,11 @@ Bootstrap 3 is bad practice. Just as style should be separated from markup, layo
 
 Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
-These layout flows can bundled in the form of mixins. Mixins in turn can be applied to any html block. Many different mixins can be applied to the same html block, changing the behaviour of the html, without having to edit the html. One of the tricks is to create standardised html blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
+These layout flows can bundled in the form of mixins. One Mixin can be applied to many html block. As many different mixins can be applied to the same html block. This enables us to change the behaviour of html blocks without ever having to edit the html itself. One of the tricks is to create standardised html blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
 
 This setup's main highlight is that it provides you with a "live html development mode", easy builds, structure, and really clean minimal code.
 
-> No CoffeeScript is not included to match the Jade/Stylus style. I might jump into the CoffeeScript boat someday, but I still frown at the '=>'s
+> CoffeeScript is not used in the setup as one would expect to match the Jade/Stylus style. I might jump into the CoffeeScript boat someday, but I still frown at the '-> and =>'s. But you can still use CoffeeScript in the project, it will be compiled.
 
 
 - Tools: 
