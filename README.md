@@ -6,7 +6,7 @@ Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-ba
 
 Note: HTML6 doesn't exist (yet). This project does not contain HTML6. I put 'HTML6' in the title for fun, and in a way because I feel this setup is a big step ahead of the typical (bootstrap3-ish) html5 development setup. 
 
-Bootstrap 3 is bad practice. Just as style should be separated from markup, layout logic should be separated from markup. It is not good practice to enforce a responsive behaviour to a piece of html. Do not pollute your html with .col-md2.col-lg4.col-etc. You shouldn't even be messing with html files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to acomplish beautifully.
+Bootstrap 3 is bad practice. Just as style should be separated from markup, layout logic should be separated from markup. It is not good practice to enforce a responsive behaviour to a piece of html. Do not pollute your html with .col-md2.col-lg4.col-etc. You shouldn't even be messing with html files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to acomplish gracefully.
 
 Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
