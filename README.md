@@ -103,14 +103,26 @@ I will be adding information about the Jade templates structure later.
 
 - Production
     - JavaScript files are compressed and obfuscated
+    - JavaScript files are compiled WITHOUT source maps
     - CSS files are compressed
+    - CSS files are compiled WITHOUT source maps
     - HTML files are compressed
-    - JavaScript and CSS files are compiled WITHOUT source maps
 - Development
     - JavaScript files are compiled WITH source maps
-    - CSS files are compiled WITH source maps
-    - JavaScript and CSS files are readable, NOT compressed
+    - JavaScript files are readable, NOT compressed
+    - CSS files are readable, NOT compressed
+    - (SOON) CSS files are compiled WITH source maps
     - HTML files are readable, NOT compressed
+
+
+### Roadmap
+
+- I18N
+- Minimal Router
+- Add optional Express.js or Koa
+
+---------
+
 
 
 # Available Gulp tasks  
@@ -149,3 +161,4 @@ I will be adding information about the Jade templates structure later.
 
 ### gulp build_prod
 - Creates a PRODUCTION build
+
