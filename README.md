@@ -1,18 +1,18 @@
 ## AB HTML6 Boilerplate
 
-This is my current html development setup.
+This is my current HTML Front-end development setup.
 
 Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-based project with ready-to-use tasks.
 
-Note: HTML6 doesn't exist (yet). This project does not contain HTML6. I put 'HTML6' in the title for fun, and in a way because I feel this setup is a big step ahead of the typical (bootstrap3-ish) html5 development setup. 
+> Note: HTML6 doesn't exist (yet). This project does not contain HTML6. I put 'HTML6' in the title for fun, and in a way because I feel this setup is a big step ahead of the typical (bootstrap3-ish) HTML5 development setup. 
 
-Bootstrap 3 is bad practice. Just as style should be separated from markup, layout logic should be separated from markup. It is not good practice to enforce a responsive behaviour to a piece of html. Do not pollute your html with .col-md2.col-lg4.col-etc. You shouldn't even be messing with html files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to acomplish gracefully.
+Why Jeet? Because just as style should be separated from markup, layout logic should be separated from markup. Therefore Bootstrap 3 is bad practice (sorry Bootstrap lovers). It is easy to understand why is it not good practice to enforce a responsive behaviour to a piece of HTML. In Bootstrap, everytime we want to change responsive behaviour, we need to edit HTML files, and that doesn't make sense. Do not pollute your HTML with .col-md2.col-lg4.col-etc classes. You shouldn't even be messing with HTML files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
 
 Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
-These layout flows can bundled in the form of mixins. One mixin can be applied to many html block. As many different mixins can be applied to the same html block. This enables us to change the behaviour of html blocks without ever having to edit the html itself. One of the tricks is to create standardised html blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
+These layout flows can bundled in the form of mixins. One mixin can be applied to many HTML block. As many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without ever having to edit the HTML itself. One of the tricks is to create standardised HTML blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
 
-> This setup's main highlight is that it provides you with a "live html development mode", easy builds, structure, and really clean minimal code.
+This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
 
 - Tools: 
