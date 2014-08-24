@@ -3,3 +3,4 @@ builds/
 .DS_Store
 Thumbs.db
 ab_boilerplate.sublime-workspace
+npm-debug.log
