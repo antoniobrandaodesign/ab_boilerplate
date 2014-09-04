@@ -10,6 +10,18 @@
 */
 
 
+// values for rupture
+base-font-size 					= 16px
+rupture.enable-em-breakpoints 	= true
+
+// mobile-cutoff = 25em
+// tablet-cutoff = 51em
+// desktop-cutoff = 65.625em
+// desktop-cutoff = 100em
+
+// scale = 0 400px 600px 800px 1050px
+
+
 /**
 * CSS for the main central blocks of the app
 *
@@ -17,8 +29,43 @@
 * @return n.a.
 */
 .block-container
-	col(1/1)
+	span(1)
 	.block-container-inner
 		center(80%)
 		+above(1280px)
 			center(1028px)
+
+/**
+* Utility classes to show or hide elements in handhekd and desktop devices
+*
+* @param none
+* @return n.a.
+*/
+.desktop-only
+	+tablet()
+		display none
+	+mobile()
+		display none
+.handheld-only
+	+desktop()
+		display none
+
+
+
+
+
+
+// .main-container
+// 	position relative
+// 	span(1)
+// 	.inner-container
+// 		+mobile()
+// 			center(90%)
+// 			density('retina')
+// 		+tablet()
+// 			center(90%)
+// 			density('retina')
+// 		+desktop()
+// 			center(70%)
+// 		+above(1720px)
+// 			center(1280px)

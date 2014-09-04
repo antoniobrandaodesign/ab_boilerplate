@@ -1,18 +1,18 @@
-## AB HTML6 Boilerplate
+## AB HTML Boilerplate
 
 This is my current HTML Front-end development setup.
 
-Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-based project with ready-to-use tasks.
+Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-based project with BrowserSync and ready-to-use tasks.
 
-This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
+> This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
 Questions in the Issues section please. Contributions to improve this setup are welcome!
 
 > Note: HTML6 doesn't exist (yet). This project does not contain HTML6. I put 'HTML6' in the title for fun, and in a way because I feel this setup is a big step ahead of the typical (bootstrap3-ish) HTML5 development setup. 
 
-Why Jeet? Because just as style should be separated from markup, layout logic should be separated from markup. Therefore Bootstrap 3 is bad practice (sorry Bootstrap lovers). It is easy to understand why is it not good practice to enforce a specific responsive behaviour to a piece of HTML. In Bootstrap, everytime we want to change responsive behaviour, we need to edit HTML files, and that doesn't make sense. Do not pollute your HTML with .col-md2.col-lg4.col-etc classes. You shouldn't even be messing with HTML files to work responsive behavour. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
+Jeet is a great responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, it allows you to create very complex layout flows very quickly with a few minimal lines of code. 
 
-Jeet is an incredible responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, allows you to create very complex layout flows very quickly with a few minimal lines of code. 
+Why Jeet? We believe that not only style but also layout logic should be independent from markup. Jeet is a hyper simple yet efficient way to apply responsive layout logic to HTML, without even touching HTML files. Everything is done within CSS. Jeet doesn't pollute your HTML with .col-md2.col-lg4.col-etc classes everywhere. It doesn't enforce a specific responsive behaviour to any piece of HTML. In typical Bootstrap code, everytime we want to change responsive behaviour we need to edit HTML files, making code hard to maintain. You shouldn't even be messing about with HTML files in the first place. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
 
 Jeet + Rupture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop ?
 
@@ -57,10 +57,12 @@ I will be adding information about the Jade templates structure later.
         - Readable in development tasks
         - Source maps in development tasks
     - CSS
+        - Responsive at core
+        - Responsive typography
         - Compressed in production tasks
         - Readable in development tasks
         - Autoprefixer (down to IE7)
-        - (SOON) Source maps in development tasks
+        - Source maps in development tasks
     - HTML
         - Predefined structure for basic building blocks
         - Compressed in production tasks
@@ -111,7 +113,7 @@ I will be adding information about the Jade templates structure later.
     - JavaScript files are compiled WITH source maps
     - JavaScript files are readable, NOT compressed
     - CSS files are readable, NOT compressed
-    - (SOON) CSS files are compiled WITH source maps
+    - CSS files are compiled WITH source maps
     - HTML files are readable, NOT compressed
 
 
@@ -135,7 +137,7 @@ I will be adding information about the Jade templates structure later.
 - Saved files will be compiled on the fly
 - Changes are injected in the browser automatically
 
-### gulp stylus_all
+### gulp stylus_dev
 - Compiles all Stylus files in development mode: WITH source maps & not minified
 
 ### gulp stylus_prod
