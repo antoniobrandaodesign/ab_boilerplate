@@ -4,7 +4,7 @@ var runSequence = require('run-sequence');
 
 gulp.task('build_dev', ['setDevelopment'], function() 
 {
-    runSequence('clean', 'js', 'stylus_all', 'jade_all', 'images');
+    runSequence('clean', 'js', 'stylus_dev', 'jade_all', 'images');
 });
 
 
