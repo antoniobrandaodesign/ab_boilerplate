@@ -71,6 +71,8 @@ I will be adding information about the Jade templates structure later.
     - Automatic clean-up of build folders before creating builds
     - Tasks print processed file names to console
     - Error reporting and handling
+    - Device detection
+    - Production-ready Jade structure
     - Handy information task (simply run "gulp" in project folder to see info & available tasks)
 
 # Installing
