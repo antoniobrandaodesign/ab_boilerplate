@@ -104,12 +104,14 @@ I will be adding information about the Jade templates structure later.
 ### Development and Production tasks: difference
 
 - Production
+    - Build is created in folder /builds/development
     - JavaScript files are compressed and obfuscated
     - JavaScript files are compiled WITHOUT source maps
     - CSS files are compressed
     - CSS files are compiled WITHOUT source maps
     - HTML files are compressed
 - Development
+    - Build is created in folder /builds/production
     - JavaScript files are compiled WITH source maps
     - JavaScript files are readable, NOT compressed
     - CSS files are readable, NOT compressed
@@ -162,8 +164,8 @@ I will be adding information about the Jade templates structure later.
 - Upload production build to FTP. Entering hostname in gulp task is necessary. Username and Password will be prompted in the console
 
 ### gulp build_dev
-- Creates a DEVELOPMENT build
+- Creates a DEVELOPMENT build. Starts by completely deleting previous build
 
 ### gulp build_prod
-- Creates a PRODUCTION build
+- Creates a PRODUCTION build. Starts by completely deleting previous build
 
