@@ -22,6 +22,10 @@ gulp.task('default', function()
 	console.log(chalk.white.bold("Changes are injected in the browser automatically"));
 	console.log("");
 
+	console.log(chalk.magenta("➜ gulp jade_all"));
+	console.log(chalk.white.bold("Compiles all Jade files in development mode: WITH source maps & not minified"));
+	console.log("");
+
 	console.log(chalk.magenta("➜ gulp stylus_all"));
 	console.log(chalk.white.bold("Compiles all Stylus files in development mode: WITH source maps & not minified"));
 	console.log("");
