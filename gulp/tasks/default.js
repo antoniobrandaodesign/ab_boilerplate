@@ -23,7 +23,7 @@ gulp.task('default', function()
 	console.log("");
 
 	console.log(chalk.magenta("➜ gulp jade_dev"));
-	console.log(chalk.white.bold("Compiles all Jade files in development mode: WITH source maps & not minified"));
+	console.log(chalk.white.bold("Compiles all Jade files in development mode: not minified"));
 	console.log("");
 
 	console.log(chalk.magenta("➜ gulp stylus_all"));
