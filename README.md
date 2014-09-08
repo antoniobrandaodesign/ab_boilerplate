@@ -137,6 +137,9 @@ I will be adding information about the Jade templates structure later.
 - Saved files will be compiled on the fly
 - Changes are injected in the browser automatically
 
+### gulp jade_dev
+- Compiles all Jade files in development mode: not minified
+
 ### gulp stylus_dev
 - Compiles all Stylus files in development mode: WITH source maps & not minified
 

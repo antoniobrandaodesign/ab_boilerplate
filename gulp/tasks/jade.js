@@ -18,7 +18,7 @@ gulp.task('jade', ['environmentCheck'], function()
 			.pipe(gulpif( global.isWatching === true, connect.reload() ));
 });
 
-gulp.task('jade_all', ['environmentCheck'], function()
+gulp.task('jade_dev', ['environmentCheck'], function()
 {
 	return  gulp.src( global.htmlSrcPath )
 			.pipe(jade({ pretty: global.ENV === 'development' }))
