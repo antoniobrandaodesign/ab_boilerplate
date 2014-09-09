@@ -12,7 +12,7 @@ Jeet is a great responsive framework. Much cleaner, leaner and faster than Boots
 
 Why Jeet? We believe that not only style but also layout logic should be independent from markup. Jeet is a hyper simple yet efficient way to apply responsive layout logic to HTML, without even touching HTML files. Everything is done within CSS. Jeet doesn't pollute your HTML with .col-md2.col-lg4.col-etc classes everywhere. It doesn't enforce a specific responsive behaviour to any piece of HTML. In typical Bootstrap code, everytime we want to change responsive behaviour we need to edit HTML files, making code hard to maintain. You shouldn't even be messing about with HTML files in the first place. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
 
-Jeet + Rupture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop ?
+Jeet + Rupture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop? Using Stylus it would be like this:
 
     .grid-element
         +mobile()
@@ -75,7 +75,7 @@ I will be adding information about the Jade templates structure later.
     - Production-ready Jade structure
     - Handy information task (simply run "gulp" in project folder to see info & available tasks)
 
-# Installing
+### Installing
 
     1. install Node.js
     2. run "sudo npm install -g gulp" in the console  (sudo is necessary because "-g" is a global installation)
@@ -86,7 +86,7 @@ I will be adding information about the Jade templates structure later.
         5b. Copy the module's name and run "npm install the-missing-module-name --save". 
         5c. Repeat the process for each missing module if necessary.
 
-# Running (first time)
+### Running (first time)
 
     A. when running the first time, run first "gulp build_dev" to make a build and have something to work with
     B. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
@@ -95,7 +95,7 @@ I will be adding information about the Jade templates structure later.
     E. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
     F. run "gulp" in the console to see available tasks
 
-# Running (normally)
+### Running (normally)
 
     A. normally when starting work, what you want is to run "gulp watch" and rock on
     B. run "gulp" in the console to see available tasks
@@ -140,7 +140,10 @@ I will be adding information about the Jade templates structure later.
 - Changes are injected in the browser automatically
 
 ### gulp jade_dev
-- Compiles all Jade files in development mode: not minified
+- Compiles all Jade files in development mode: readable, not compressed
+
+### gulp jade_prod
+- Compiles all Jade files in development mode: compressed, not readable
 
 ### gulp stylus_dev
 - Compiles all Stylus files in development mode: WITH source maps & not minified
