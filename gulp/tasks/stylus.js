@@ -9,7 +9,6 @@ var print           = require('gulp-print');
 var stylus		 	= require("gulp-stylus");
 var autoprefixer 	= require("autoprefixer-stylus");
 var jeet		 	= require("jeet");
-var nib		 	 	= require("nib");
 var rupture	 	 	= require("rupture");
 var axis	 		= require("axis-css");
 var typographic	 	= require("typographic");
@@ -22,8 +21,7 @@ gulp.task('stylus', ['environmentCheck'], function ()
 	.pipe(stylus({ 
 		compress: global.ENV === 'production',
 		use:[	
-				jeet(), 
-				nib(), 
+				jeet(),
 				rupture(), 
 				typographic(), 
 				axis(), 
@@ -43,8 +41,7 @@ gulp.task('stylus_dev', ['setDevelopment'], function ()
 	.pipe(stylus({
 		compress: false,
 		use:[	
-				jeet(), 
-				nib(), 
+				jeet(),
 				rupture(), 
 				typographic(), 
 				axis(),
@@ -63,8 +60,7 @@ gulp.task('stylus_prod', ['setProduction'], function ()
 	.pipe(stylus({
 		compress: true,
 		use:[
-				jeet(), 
-				nib(), 
+				jeet(),
 				rupture(), 
 				typographic(), 
 				axis(), 

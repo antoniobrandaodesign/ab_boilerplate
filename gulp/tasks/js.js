@@ -19,7 +19,7 @@ gulp.task('js', function() {
     // Required watchify args
     cache: {}, packageCache: {}, fullPaths: true,
     // Browserify Options
-    entries:    ['./src/js/main.js'],
+    entries:    ['./core/js/main.js'],
     extensions: ['.coffee', '.hbs'],
     debug:      global.ENV === 'development'
   });

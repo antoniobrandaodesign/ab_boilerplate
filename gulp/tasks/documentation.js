@@ -1,8 +1,8 @@
-var gulp 	= require('gulp');
-var markdox = require('gulp-markdox');
-var concat  = require('gulp-concat')
-var rename  = require("gulp-rename");
-var runSequence = require('run-sequence');
+var gulp 	     = require('gulp');
+var markdox      = require('gulp-markdox');
+var concat       = require('gulp-concat')
+var rename       = require("gulp-rename");
+var runSequence  = require('run-sequence');
 var	jade 		 = require('gulp-jade');
 
 var	browserify 	 = require('browserify');
@@ -88,7 +88,7 @@ gulp.task('docs', ['setProduction'], function()
 
 gulp.task('jade_docs', ['environmentCheck'], function()
 {
-	return  gulp.src('src/docs/jade/index.jade')
+	return  gulp.src('core/docs_generator_files/jade/index.jade')
 			.pipe(jade({ }))
 			.pipe(gulp.dest(global.outputDir + global.dataPath + '/docs'));
 });
@@ -99,7 +99,7 @@ gulp.task('jade_docs', ['environmentCheck'], function()
 gulp.task('docs_js', ['environmentCheck'], function() {
 
   var bundler = browserify({
-	entries: ['./src/docs/js/script.js']
+	entries: ['./core/docs_generator_files/js/script.js']
   });
 
   var bundle = function() 
