@@ -150,3 +150,12 @@ transform-origin(x, y)
 	-moz-transform-origin    x y
 	-ms-transform-origin     x y
 	-o-transform-origin      x y
+
+
+// init hardware acceleration
+.gpu-wk
+	transform translate3d(0, 0, 0)
+	-webkit-transform translate3d(0, 0, 0)
+	&.flick-fix
+		-webkit-backface-visibility hidden
+		-webkit-perspective 1000
