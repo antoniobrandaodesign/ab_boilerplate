@@ -37,7 +37,7 @@ I will be adding information about the Jade templates structure later.
         - [Rupture](http://jenius.github.io/rupture/)
         - [Typographic](https://github.com/corysimmons/typographic)
         - [Axis CSS](http://roots.cx/axis/)
-        - [Nib](http://visionmedia.github.io/nib/)
+        - [Nib](http://visionmedia.github.io/nib/)  (included above in Axis CSS)
         - [Autoprefixer](https://www.npmjs.org/package/autoprefixer-stylus)
     - HTML
         - [Jade](http://jade-lang.com)
