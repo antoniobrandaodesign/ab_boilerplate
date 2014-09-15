@@ -6,6 +6,8 @@ Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-ba
 
 > This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
+> This project is meant to be used as a dependency of your project. Clone this project then create a Git submodule under a folder named "src" where your specific files will live
+
 Questions in the Issues section please. Contributions to improve this setup are welcome!
 
 Jeet is a great responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, it allows you to create very complex layout flows very quickly with a few minimal lines of code. 
@@ -88,12 +90,14 @@ I will be adding information about the Jade templates structure later.
 
 ### Running (first time)
 
-    A. when running the first time, run first "gulp build_dev" to make a build and have something to work with
-    B. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
-    C. open that URL in your browser. you should see a simple responsive website
-    D. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
-    E. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
-    F. run "gulp" in the console to see available tasks
+    A. Create a "src" folder in the root of the project
+    B. For a test drive, copy all the files in "src_template" into the "src" folder
+    C. when running the first time, run first "gulp build_dev" to make a build and have something to work with
+    D. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
+    E. open that URL in your browser. you should see a simple responsive website
+    F. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
+    G. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
+    H. run "gulp" in the console to see available tasks
 
 ### Running (normally)
 
