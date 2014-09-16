@@ -12,8 +12,9 @@ var bundleLogger  = require('../util/bundleLogger');
 var handleErrors  = require('../util/handleErrors');
 var strip         = require('gulp-strip-debug');
 var print         = require("gulp-print");
+var datapaths     = require("./datapaths");
 
-gulp.task('js', function() {
+gulp.task('js', ['environmentCheck'], function() {
 
   var bundler = browserify({
     // Required watchify args
@@ -36,7 +37,7 @@ gulp.task('js', function() {
       .pipe(gulpif( global.ENV === 'production', streamify( strip() )))
       // uglify JS and obfuscate in produciton mode only
       .pipe(gulpif( global.ENV === 'production', streamify(uglify({ mangle: global.ENV === 'production' }))))
-      .pipe(gulp.dest(global.outputDir + global.dataPath + '/js'))
+      .pipe(gulp.dest(global.outputDir + datapaths.dataPath + '/js'))
       .pipe(connect.reload())
       .on('end', bundleLogger.end);
   };

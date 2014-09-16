@@ -12,11 +12,12 @@ var jeet		 	= require("jeet");
 var rupture	 	 	= require("rupture");
 var axis	 		= require("axis-css");
 var typographic	 	= require("typographic");
+var datapaths	 	= require("./datapaths");
 
 
 gulp.task('stylus', ['environmentCheck'], function () 
 {  
-	gulp.src( global.cssSrcPath )
+	gulp.src( datapaths.cssSrcPath )
 	.pipe( plumber( handleErrors ) )
 	.pipe(stylus({ 
 		compress: global.ENV === 'production',
@@ -30,13 +31,13 @@ gulp.task('stylus', ['environmentCheck'], function ()
 			sourcemap: { inline: global.ENV === 'development' } 
 	}))
 	.pipe(print())
-	.pipe(gulp.dest(global.outputDir + global.dataPath + '/css'))
+	.pipe(gulp.dest(global.outputDir + datapaths.dataPath + '/css'))
 	.pipe(gulpif( global.isWatching === true, connect.reload() ));
 });
 
 gulp.task('stylus_dev', ['setDevelopment'], function () 
 {  
-	gulp.src( global.cssSrcPath )
+	gulp.src( datapaths.cssSrcPath )
 	.pipe( plumber( handleErrors ) )
 	.pipe(stylus({
 		compress: false,
@@ -50,12 +51,12 @@ gulp.task('stylus_dev', ['setDevelopment'], function ()
 			sourcemap: { inline: true } 
 	}))
     .pipe(print())
-	.pipe(gulp.dest(global.outputDir + global.dataPath + '/css'));
+	.pipe(gulp.dest(global.outputDir + datapaths.dataPath + '/css'));
 });
 
 gulp.task('stylus_prod', ['setProduction'], function () 
 {  
-	gulp.src( global.cssSrcPath )
+	gulp.src( datapaths.cssSrcPath )
 	.pipe( plumber( handleErrors ) )
 	.pipe(stylus({
 		compress: true,
@@ -68,5 +69,5 @@ gulp.task('stylus_prod', ['setProduction'], function ()
 			]
 	}))
 	.pipe(print())
-	.pipe(gulp.dest(global.outputDir + global.dataPath + '/css'));
+	.pipe(gulp.dest(global.outputDir + datapaths.dataPath + '/css'));
 });

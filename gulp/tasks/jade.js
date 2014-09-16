@@ -6,10 +6,11 @@ var plumber		 = require("gulp-plumber");
 var	gulpif 		 = require('gulp-if');
 var print        = require('gulp-print');
 var handleErrors = require('../util/handleErrors');
+var datapaths	 = require("./datapaths");
 
 gulp.task('jade', ['environmentCheck'], function()
 {
-	return  gulp.src( global.htmlSrcPath )
+	return  gulp.src( datapaths.htmlSrcPath )
 			.pipe( plumber( handleErrors ) )
 			// .pipe(changed( global.outputDir, {extension: '.html'}))
 			.pipe(jade({ pretty: global.ENV === 'development' }))
@@ -20,7 +21,7 @@ gulp.task('jade', ['environmentCheck'], function()
 
 gulp.task('jade_dev', ['environmentCheck'], function()
 {
-	return  gulp.src( global.htmlSrcPath )
+	return  gulp.src( datapaths.htmlSrcPath )
 			.pipe(jade({ pretty: global.ENV === 'development' }))
 			.pipe(print())
 			.pipe(gulp.dest(global.outputDir))
@@ -29,7 +30,7 @@ gulp.task('jade_dev', ['environmentCheck'], function()
 
 gulp.task('jade_prod', ['setProduction'], function()
 {
-	return  gulp.src( global.htmlSrcPath )
+	return  gulp.src( datapaths.htmlSrcPath )
 			.pipe(jade({ pretty: false }))
 			.pipe(print())
 			.pipe(gulp.dest(global.outputDir))

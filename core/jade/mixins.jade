@@ -1,0 +1,389 @@
+- // Main top menu
+-var topMenu_item1 =	{ title: 'FEATURES', 	url: 'features.html' };
+-var topMenu_item2 =	{ title: 'PRICING', 	url: 'pricing.html' };
+-var topMenu_item3 =	{ title: 'BLOG', 		url: 'blog_home.html' };
+-var topMenu_item4 =	{ title: 'SUPPORT',		url: 'http://support.ftspy.com/' };
+-var topMenu_item5 =	{ title: 'LOGIN',		url: 'https://www.ftspy.com/home' };
+-var topMenu_items =	[ topMenu_item1, topMenu_item2, topMenu_item3, topMenu_item4, topMenu_item5 ];
+
+- // BUY Dropdown items
+-var buy_item1 =	{ title: '1 USER FREE', 		price: 'FREE', 			url: '#' };
+-var buy_item2 =	{ title: '1 USER PREMIUM', 		price: '6€ / MONTH', 	url: '#' };
+-var buy_item3 =	{ title: '5 USERS PREMIUM', 	price: '35€ / MONTH', 	url: '#' };
+-var buy_item4 =	{ title: '10 USERS PREMIUM',	price: '60€ / MONTH', 	url: '#' };
+-var buy_item5 =	{ title: '15 USERS PREMIUM', 	price: '75€ / MONTH', 	url: '#' };
+-var buy_item6 =	{ title: '25 USERS PREMIUM', 	price: '120€ / MONTH', 	url: '#' };
+-var buy_item7 =	{ title: '50 USERS PREMIUM', 	price: '200€ / MONTH', 	url: '#' };
+-var buy_items =	[ buy_item1, buy_item2, buy_item3, buy_item4, buy_item5, buy_item6, buy_item7 ];
+
+- // FEATURES top menu with inset arrow
+- var features_menu_item1 = 	{ title: 'OVERVIEW', 		icon_file: 'recreated/icon_overview.svg', 			url: '/features.html' };
+- var features_menu_item2 = 	{ title: 'SCOUTS', 			icon_file: 'recreated/icon_player_profile.svg', 	url: '/features_scouts.html' };
+- var features_menu_item3 = 	{ title: 'COACHES', 		icon_file: 'recreated/icon_costumer_care.svg', 		url: '/features_coaches.html' };
+- var features_menu_item4 = 	{ title: 'AGENCIES', 		icon_file: 'recreated/icon_scouting_reports.svg', 	url: '/features_agencies.html' };
+- var features_menu_item5 = 	{ title: 'CLUBS', 			icon_file: 'recreated/icon_players_database.svg', 	url: '/features_clubs.html' };
+- var features_menu_item6 = 	{ title: 'ACADEMIES', 		icon_file: 'recreated/icon_pro_scouting_tools.svg', url: '/features_academies.html' };
+- var features_menu_item7 = 	{ title: 'ALL FEATURES',	icon_file: 'recreated/icon_pro_scouting_tools.svg', url: '/features_allfeatures.html' };
+- var features_menu_items = 	[ features_menu_item1, features_menu_item2, features_menu_item3, features_menu_item4, features_menu_item5, features_menu_item6, features_menu_item7 ];
+
+- // BLOG top menu with inset arrow
+- var blog_menu_item1 = 	{ title: 'BLOG', 	icon_file: 'TalentSpy_Icons_1_Blog.svg', 			url: 'blog_home.html' };
+- var blog_menu_item2 = 	{ title: 'ARCHIVE', icon_file: 'TalentSpy_Icons_1_Blog_Archive.svg', 	url: 'blog_archive.html' };
+- var blog_menu_items = 	[ blog_menu_item1, blog_menu_item2 ];
+
+- // BUY top menu
+- var buy_menu_item1 = 	{ title: '1. Plan & Add-ons', 	url: 'buy_page_1.html' };
+- var buy_menu_item2 = 	{ title: '2. Owner info', 	url: 'buy_page_2.html' };
+- var buy_menu_item3 = 	{ title: '3. Billing info', url: 'buy_page_3.html' };
+- var buy_menu_items = 	[ buy_menu_item1, buy_menu_item2, buy_menu_item3 ];
+
+- // COMPANY top menu with inset arrow
+- var company_menu_item1 = 	{ title: 'COMPANY', 	icon_file: 'TalentSpy_Icons_1_Company.svg', 	url: '#' };
+- var company_menu_item2 = 	{ title: 'TEAM', 		icon_file: 'TalentSpy_Icons_1_Team.svg', 		url: '#' };
+- var company_menu_item3 = 	{ title: 'CONTACT', 	icon_file: 'TalentSpy_Icons_1_Pin.svg', 		url: '#' };
+- var company_menu_items = 	[ company_menu_item1, company_menu_item2, company_menu_item3 ];
+
+- // Countries list
+- var countries_list = ["Afghanistan", "Åland Islands", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia, Plurinational State of", "Bonaire, Sint Eustatius and Saba", "Bosnia and Herzegovina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo", "Congo, the Democratic Republic of the", "Cook Islands", "Costa Rica", "Côte d'Ivoire", "Croatia", "Cuba", "Curaçao", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands (Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "French Southern Territories", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard Island and McDonald Islands", "Holy See (Vatican City State)", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran, Islamic Republic of", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, Democratic People's Republic of", "Korea, Republic of", "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macao", "Macedonia, the former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Moldova, Republic of", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Palestinian Territory, Occupied", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", "Puerto Rico", "Qatar", "Réunion", "Romania", "Russian Federation", "Rwanda", "Saint Barthélemy", "Saint Helena, Ascension and Tristan da Cunha", "Saint Kitts and Nevis", "Saint Lucia", "Saint Martin (French part)", "Saint Pierre and Miquelon", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Sint Maarten (Dutch part)", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and the South Sandwich Islands", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Svalbard and Jan Mayen", "Swaziland", "Sweden", "Switzerland", "Syrian Arab Republic", "Taiwan, Province of China", "Tajikistan", "Tanzania, United Republic of", "Thailand", "Timor-Leste", "Togo", "Tokelau", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "United States Minor Outlying Islands", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela, Bolivarian Republic of", "Viet Nam", "Virgin Islands, British", "Virgin Islands, U.S.", "Wallis and Futuna", "Western Sahara", "Yemen", "Zambia", "Zimbabwe"];
+
+
+- /////////////  DATA END
+- /////////////
+- /////////////
+- ///////////// 
+- /////////////
+- /////////////
+- /////////////  MIXINS START
+
+
+mixin topMenuBarWithInsetArrow(active_index, menu_id)
+	case menu_id
+		when 'features'
+			+createTopMenuBarWithInsetArrow(active_index, features_menu_items)
+		when 'blog'
+			+createTopMenuBarWithInsetArrow(active_index, blog_menu_items)
+		when 'company'
+			+createTopMenuBarWithInsetArrow(active_index, company_menu_items)
+
+
+mixin createTopMenuBarWithInsetArrow(active_index, items)
+	div.top-menu-with-inset-arrow-2
+		div.div-left.main-block.side-block
+		div.div-center.main-block
+			div.div-top
+				div.css-inset-arrow-left
+				div.css-inset-arrow
+					div.contents
+						div.middle
+							div.middle-left
+							div.middle-right
+				div.css-inset-arrow-right
+			div.div-bottom
+				each item, index in items
+					div(class= 'singular-item ' + (index == active_index ? 'active ' : '') + (index == (items.length-1) ? 'last' : ''))
+						a(href=item.url)
+							img.svg(src='img/vector/icons/' + item.icon_file)
+							h3= item.title
+		div.div-right.main-block.side-block
+
+mixin topMenu(active_index, h1_text, serif_text, lead_text, extra)
+	div.container.top-container
+		div.row.top-area.hide-in-tablet.hide-in-mobile
+			a(href="index.html")
+				img.svg.logo-img(src='img/vector/ftspy_logo1.svg')
+			div.right-elements
+				ul.top-menu
+					each menu_item, index in topMenu_items
+						li(class=index == active_index ? 'active' : '')
+							a(href=menu_item.url)= menu_item.title
+					li.sign-up
+						a(href="https://www.ftspy.com/register") SIGN UP FREE
+				a(href="#")
+					i.fa.fa-globe
+					i.fa.fa-chevron-down
+		div.row.middle-area
+			p.first-line= serif_text
+			h1!= h1_text
+			p.regular-text!= lead_text
+			if extra == true
+				div.ctas
+					a(href="#")
+						div.watch-demo WATCH DEMO
+							img.icon-play(src='img/vector/icons/recreated/icon_play_square_rounded.svg')
+					div.or - or -
+					a(href="#")
+						div.get-started.button.red GET STARTED
+				p.regular-text No credit card required. Free 30 days trial. 
+
+mixin shareLike
+	div.social-ctas.middle
+		div.inside-content
+			a.like(href='#')
+				p LIKE 
+				img.svg(src='img/vector/icons/recreated/like_small.svg')
+			a.share(href='#')
+				p SHARE
+				img.svg(src='img/vector/icons/recreated/share_small.svg')
+
+mixin prevNextPager
+	div.pre-next-pager
+		span.prev 
+			a(href='#') PREVIOUS
+		span.middle | 
+		span.next 
+			a(href='#') NEXT
+
+mixin seeMore
+	div.see-more
+		a(href='#') SEE MORE ARTICLES IN
+			span  PRESS COVERAGE
+
+mixin openTicketModule
+	div.open-ticket-container
+		div.inner-container
+			div.headline-duo
+				h2 CAN'T FIND WHAT YOU'RE LOOKING FOR?
+				H3 OUR IN-HOUSE CUSTOMER SUPPORT TEAM IS HERE FOR YOU
+			div.open-ticket 
+				a OPEN A SUPPORT TICKET
+
+mixin whatElseCanBeFound
+	div.container.feature5-container
+		div.inner-container
+			div.row
+				h2 WHAT ELSE CAN BE FOUND
+			div.delta-elements-container
+				a(href='#').delta-element
+					img.svg(src='img/vector/icons/recreated/icon_player_profile.svg')
+					h3 COLLECT PLAYERS INFORMATION
+					p Note down all collected information about player personal data, performance and behavior.
+				a(href='#').delta-element.second
+					img.svg(src='img/vector/icons/recreated/icon_report.svg')
+					h3 SCOUTING REPORTS
+					p Analyze, quantify and qualify players by their skills, strengths, weaknesses, game style and more.
+				a(href='#').delta-element.third
+					img.svg(src='img/vector/icons/recreated/icon_players_database.svg')
+					h3 FOOTBALL DATABASE
+					p Get access to a huge football database filled with information about players, clubs and national teams.
+				a(href='#').delta-element.second
+					img.svg(src='img/vector/icons/recreated/icon_player_profile.svg')
+					h3 COLLECT PLAYERS INFORMATION
+					p Note down all collected information about player personal data, performance and behavior.
+				a(href='#').delta-element
+					img.svg(src='img/vector/icons/recreated/icon_report.svg')
+					h3 COLLECT PLAYERS INFORMATION
+					p Analyze, quantify and qualify players by their skills, strengths, weaknesses, game style and more.
+				a(href='#').delta-element.third.second
+					img.svg(src='img/vector/icons/recreated/icon_players_database.svg')
+					h3 COLLECT PLAYERS INFORMATION
+					p Get access to a huge football database filled with information about players, clubs and national teams.
+
+mixin whatYouShouldKnow
+	div.container.should-know-container
+		div.row.headline-duo
+			h2 WHAT SHOULD YOU KNOW
+		div.container-content
+			a(href='faq_home.html').text-element
+				h3 HOW LONG ARE YOUR CONTRACTS?
+				img.svg(src="img/vector/icons/recreated/icon_arrow_right.svg")
+				p Talent Spy plans are month-to-month or yearly. We make it simple to start — and stop — your service at any time.
+			a(href='faq_home.html').text-element
+				h3 CAN I SWITCH PLANS?
+				img.svg(src="img/vector/icons/recreated/icon_arrow_right.svg")
+				p Yes, at any time, in your account settings. When upgrading or downgrading your plan, you will receive either a pro-rated charge or refund, depending on the cost of your new plan.
+			a(href='faq_home.html').text-element
+				h3 IS THERE A DISCOUNT FOR YEARLY SERVICE?
+				img.svg(src="img/vector/icons/recreated/icon_arrow_right.svg")
+				p Yes, we offer discounts on up-front long-term commitments. 
+			a(href='faq_home.html').text-element
+				h3 TRY EVERYTHING BEFORE YOU BUY
+				img.svg(src="img/vector/icons/recreated/icon_arrow_right.svg")
+				p Avalie e reporte detalhadamente jogos, equipas, treinadores, arbitros, sistemas tácticos etc.
+			a(href='faq_home.html').text-element
+				h3 IS THERE A DISCOUNT FOR YEARLY SERVICE?
+				img.svg(src="img/vector/icons/recreated/icon_arrow_right.svg")
+				p Yes, we offer discounts on up-front long-term commitments. 
+			a(href='faq_home.html').text-element
+				h3 DO I NEED ANOTHER WEB HOST
+				img.svg(src="img/vector/icons/recreated/icon_arrow_right.svg")
+				p No. All Talent Spy plans include our fully-managed cloud hosting, ensuring your account remains available at all times.
+
+mixin tryTalentSpyModule
+	div.trytalentspy-container
+		div.inner-container
+			div.titles
+				h2 TRY TALENT SPY FOR 30 DAYS 
+					span IT'S FREE
+				p NO CREDIT CARD REQUIRED UNTIL YOU FALL IN LOVE WITH TALENT SPY
+			div.inputs
+				div.input-form-field-holder
+					input.form-input-1(type="text", placeholder="Your Name")
+					span.info-badge.name-input-badge
+				div.input-form-field-holder
+					input.form-input-2(type="email", placeholder="Email Address")
+					span.info-badge.email-input-badge
+				div.input-form-field-holder
+					input.form-input-3(type="password", placeholder="Password")
+					span.info-badge.password-input-badge
+				div.cta-holder.input-form-field-holder.last
+					button.sign-button(href="#") SIGN UP FREE
+					img.svg(src='img/vector/icons/recreated/icon_arrow_right.svg')
+			div.disclaimer
+				p BY CLICKING TO CONTINUE, YOU AGREE TO THE TALENT SPY 
+					a(href="#") TERMS OF SERVICE
+
+mixin collapsibleBoxSimple(title, legend, description, has_checkbox, has_arrow_right)
+	div.special-buy-box
+		div.main-area
+			p.title= title
+			if has_arrow_right
+				img.svg(src='img/vector/icons/recreated/icon_arrow_right.svg')
+			p.legend= legend
+		div.dropdown-area
+			img.svg(src='img/vector/icons/TalentSpy_Icons_1_Arrow_Down.svg')
+		if has_checkbox
+			div.checkbox-holder
+				img.svg(src='img/vector/checkbox_checkmark.svg')
+		div.drawer
+			div.left-area
+				p= description
+				a(href='#') More
+			div.right-area
+				a(href='#') Add it
+
+mixin boxDrawer1(items_array, active_index)
+	div.drawer
+		each item, index in items_array
+			div(class=index == active_index ? 'sbb-list-item active' : 'sbb-list-item')
+				img.svg(src='img/vector/checkbox_checkmark.svg')
+				p.item-title= item
+
+mixin boxDrawer2(items_array, active_index)
+	div.drawer
+		each item, index in items_array
+			a(class=index == active_index ? 'sbb-list-item active' : 'sbb-list-item')
+				img.svg(src='img/vector/checkbox_checkmark.svg')
+				p.item-title= item.title
+				p.legend=  item.price
+
+mixin buyDropdown(active_index)
+	div.special-buy-box.special-buy-box-2
+		div.main-area
+			p.title= buy_items[active_index].title
+			p.legend= buy_items[active_index].price
+		div.dropdown-area
+			img.svg(src='img/vector/icons/TalentSpy_Icons_1_Arrow_Down.svg')
+		+boxDrawer2(buy_items, active_index)
+
+mixin buyDrawerSolo(active_index)
+	div.drawersolo
+		each item, index in buy_items
+			a(class=index == active_index ? 'sbb-list-item active' : 'sbb-list-item')
+				img.svg(src='img/vector/checkbox_checkmark.svg')
+				p.item-title= item.title
+				p.legend=  item.price
+
+mixin dropdownWithIcon(title, items_array, active_index, svg_icon)
+	div.special-buy-box.special-buy-box-3
+		img.ft-icon.svg(src=svg_icon)
+		div.main-area
+			p.title= title
+		div.dropdown-area
+			img.svg(src='img/vector/icons/TalentSpy_Icons_1_Arrow_Down.svg')
+		+boxDrawer1(items_array, active_index)
+
+mixin dropdownWithIconCountries(title, active_index, svg_icon)
+	+dropdownWithIcon(title, countries_list, active_index, svg_icon)
+
+mixin dropdownSmallWithOptionalIcon(title, items_array, active_index, svg_icon)
+	div(class=svg_icon != null ? 'special-buy-box special-buy-box-3 special-buy-box-4' : 'special-buy-box special-buy-box-3 special-buy-box-4 iconless')
+		img.ft-icon.svg(src=svg_icon)
+		div.main-area
+			p.title= title
+		div.dropdown-area
+			img.svg(src='img/vector/icons/TalentSpy_Icons_1_Arrow_Down.svg')
+		+boxDrawer1(items_array, active_index)
+
+mixin buyMenu(active_index)
+	div.container.buy-menu-container
+		div.row.inner-container
+			each buy_menu_item, index in buy_menu_items
+				li(class=index == active_index ? 'menu-item active' : 'menu-item')
+					a(href=buy_menu_item.url)= buy_menu_item.title
+
+mixin ftCheckbox()
+	div.ft-checkbox
+		img.svg(src='img/vector/checkbox_checkmark.svg')
+
+- // IE mixin
+- // usage example:  +ie('if IE 8', '<link href="/stylesheets/style.css" rel="stylesheet"></link>')
+mixin ie(condition, content)
+	| <!--[!{condition}]>!{content}<![endif]-->
+
+mixin mobileNav
+	div.mobile-nav.hide-in-desktop
+		div.background(src='img/vector/mobile/menu_icon.svg')
+			img.svg.ft-logo(src='img/vector/mobile/ft_logo.svg')
+			div.menu-icon
+				img.svg(src='img/vector/mobile/menu_icon.svg')
+			div.menu-icon-x
+				img.svg(src='img/vector/mobile/menu_icon_X.svg')
+		div.drawer
+			h3 MENU
+			p Platform
+			ul
+				li
+					a(href='#') Features
+				li
+					a(href='#') Pricing
+				li
+					a(href='#') Add-Ons
+				li
+					a(href='#') Change log
+			p Enterprise
+			ul
+				li
+					a(href='#') Blog
+				li
+					a(href='#') Company
+				li
+					a(href='#') Team
+				li
+					a(href='#') Contacts
+				li
+					a(href='#') Partners
+				li
+					a(href='#') Costumers
+				li
+					a(href='#') Testimonials
+			p Press
+			ul
+				li
+					a(href='#') press coverage
+				li
+					a(href='#') Press releases
+				li
+					a(href='#') Brand Guidelines
+				li
+					a(href='#') press kit
+			p More info
+			ul
+				li
+					a(href='#') Support
+				li
+					a(href='#') faq’s
+				li
+					a(href='#') terms of use
+				li
+					a(href='#') privacy policy
+				li
+					a(href='#') Cookies policy
+			div.social-icons
+				a(href='#')
+					i.fa.fa-facebook
+				a(href='#')
+					i.fa.fa-twitter
+				a(href='#')
+					i.fa.fa-youtube
+				a(href='#')
+					i.fa.fa-linkedin

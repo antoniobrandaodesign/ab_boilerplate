@@ -1,11 +1,12 @@
-var gulp = require('gulp');
+var gulp 		= require('gulp');
+// var datapaths 	= require('datapaths');
 
 gulp.task('setProduction', function() 
 {
 	global.ENV		 	= 'production';
 	global.outputDir 	= 'builds/production';
-	global.dataPath		= '/resources';
+	// global.dataPath		= '/resources';
 
-	global.cssSrcPath	= './src/stylus/app/pages/*.styl';
-	global.htmlSrcPath	= 'src/jade/*.jade';
+	// global.cssSrcPath	= './src/stylus/app/pages/*.styl';
+	// global.htmlSrcPath	= 'src/jade/*.jade';
 });

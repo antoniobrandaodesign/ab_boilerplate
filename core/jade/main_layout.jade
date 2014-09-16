@@ -1,0 +1,45 @@
+include mixins
+
+doctype html
+html
+	block vars
+	head
+		title #{title}
+		
+		//- meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+
+		//- meta(name='description', content='Crafting engaging interactive experiences and bringing life to beautiful design since 1999.')
+		//- link(rel='image_src', href='resources/img/bitmap/abv3_120x90.jpg')
+
+		//- meta(name='keywords', content='user interface, ui design, ux, html5, css, javascript, node.js, backbone, animation, interactivity, motion design, as3, actionscript, flash, adobe, air, flex, graphic, design, photoshop, antonio, brandao')
+		//- meta(name='author', content='')
+		
+		meta(name='robots', content='nofollow') 
+		meta(name='rating', content='General')
+		meta(name='revisit-after', content='1 Day')
+		meta(name='HandheldFriendly', content='True')
+		meta(name='MobileOptimized', content='320')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+			
+		meta(name='viewport', content='width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0')
+
+		block page_head
+	
+		script(src='http://www.wurfl.io/wurfl.js')
+		script(src="resources/js/bundle.js")
+
+		//- link(href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600,200italic,300italic', rel='stylesheet', type='text/css')
+		//- link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:200,300,400,700')
+		//- link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+
+		body
+			//- +mobileNav
+			canvas#bg
+
+			div.everything-else
+				
+				block content
+
+				include ../../src/jade/modules/footer
+					
