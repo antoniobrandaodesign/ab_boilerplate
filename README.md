@@ -6,7 +6,7 @@ Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-ba
 
 > This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
-> This project is meant to be used as a dependency of your project. Clone this project then create a Git submodule under a folder named "src" where your specific files will live
+> Clone this project and then create a "src" folder in it for your specific files. This "src" folder can be a Git submodule. Example files for the "src" folder are in the "src_example" folder
 
 Questions in the Issues section please. Contributions to improve this setup are welcome!
 
