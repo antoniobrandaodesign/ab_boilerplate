@@ -17,29 +17,6 @@
 */
 var $      = require('jquery');
 var utils  = require('ab-js-utils');
-// var svg         = require("./libs/ab/svg-processor.js");
-
-/*!
-* Library version.
-*/
-exports.version = '0.0.1';
-
-/**
-* Declare global App vars holder
-*
-* @param {String} js
-* @param {String} js2
-* @return {Array}
-* @see src/js/abv5
-* @api private
-*/
-window.App = 
-{
- // Models: {},
- // Collections: {},
- // Views: {},
- // Router: {}
-};
 
 App.form_factor = utils.device.form_factor();
 App.is_mobile   = utils.device.is_mobile();
