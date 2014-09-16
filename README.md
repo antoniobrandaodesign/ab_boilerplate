@@ -91,7 +91,7 @@ I will be adding information about the Jade templates structure later.
 ### Running (first time)
 
     A. Create a "src" folder in the root of the project
-    B. For a test drive, copy all the files in "src_template" into the "src" folder
+    B. For a test drive, copy all the files in "src_example" into the "src" folder
     C. when running the first time, run first "gulp build_dev" to make a build and have something to work with
     D. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
     E. open that URL in your browser. you should see a simple responsive website
