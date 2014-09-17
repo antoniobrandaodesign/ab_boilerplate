@@ -6,8 +6,6 @@ Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-ba
 
 > This setup's main highlight is that it provides you with a "live HTML development mode", easy builds, structure, and really clean minimal code.
 
-> Clone this project and then create a "src" folder in it for your specific files. This "src" folder can be a Git submodule. Example files for the "src" folder are in the "src_example" folder
-
 Questions in the Issues section please. Contributions to improve this setup are welcome!
 
 Jeet is a great responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, it allows you to create very complex layout flows very quickly with a few minimal lines of code. 
@@ -90,9 +88,9 @@ I will be adding information about the Jade templates structure later.
 
 ### Running (first time)
 
-    A. create a "src" folder in the root of the project
+    A. create a "src" folder in the root of the project (can be a Git submodule)
     B. for a test drive, copy all the files in "src_example" into the "src" folder
-    C. run "gulp build_dev" to make a build and have something to work with
+    C. run "gulp build_dev" to make a development build and have something to work with
     D. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
     E. open that URL in your browser. you should see a simple responsive website
     F. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
