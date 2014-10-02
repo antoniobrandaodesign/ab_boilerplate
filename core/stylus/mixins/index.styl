@@ -12,7 +12,7 @@
 			text-align center !important
 
 .core-button-mixin
-	center(30%)
+	center()
 	height 2em
 	// anim_prop(all, 1s, ease-out)
 	// &:hover
@@ -27,3 +27,9 @@
 		height 2em
 		line-height 1.8em
 		font-weight 400
+		display table
+		padding-left 5%
+		padding-right 5%
+		margin 0 auto
+		+below(600px)
+			line-height 1.7em

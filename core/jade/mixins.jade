@@ -1,6 +1,3 @@
-mixin core-button-mixin(string, element_class)
-	div.core-button-mixin(class= element_class ? element_class : '')
-		div.clickarea= string
 
 mixin core-cta-mixin(lead_text, button_text, element_class)
 	div.core-cta-mixin.block-container(class= element_class ? element_class : '')
@@ -9,3 +6,7 @@ mixin core-cta-mixin(lead_text, button_text, element_class)
 					h3.lead= lead_text
 				if button_text != ''
 					+core-button-mixin(button_text)
+
+mixin core-button-mixin(string, element_class)
+	div.core-button-mixin(class= element_class ? element_class : '')
+		div.clickarea= string
