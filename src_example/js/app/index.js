@@ -47,13 +47,11 @@ module.exports = {
 
         $( document ).ready( function() 
         {
-            alert('afadf');
-            
             // App.form_factor = utils.device.form_factor();
             // App.is_mobile   = utils.device.is_mobile();
 
-            // console.log('APP form_factor : ' + App.form_factor);
-            // console.log('APP is_mobile   : '+ App.is_mobile);
+            // console.log('form_factor : ' + App.form_factor);
+            // console.log('is_mobile   : '+ App.is_mobile);
 
             if (App.is_mobile)
             {
