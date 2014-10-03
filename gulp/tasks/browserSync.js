@@ -10,3 +10,13 @@ gulp.task('browserSync', ['environmentCheck'], function()
 		}
 	});
 });
+
+
+gulp.task('browserSync_express', ['environmentCheck'], function() 
+{
+	browserSync.init([global.outputDir + '/**'], {
+		open: false,
+		port: 4000,
+		proxy: "http://localhost:3000"
+	});
+});
