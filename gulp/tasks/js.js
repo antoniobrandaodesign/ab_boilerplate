@@ -23,6 +23,7 @@ gulp.task('js', ['environmentCheck'], function() {
     entries:    ['./core/js/main.js'],
     extensions: ['.coffee', '.hbs'],
     debug:      global.ENV === 'development'
+    // transform:  [ 'jadeify' ]
   });
 
   var bundle = function() 
@@ -37,6 +38,7 @@ gulp.task('js', ['environmentCheck'], function() {
       .pipe(gulpif( global.ENV === 'production', streamify( strip() )))
       // uglify JS and obfuscate in produciton mode only
       .pipe(gulpif( global.ENV === 'production', streamify(uglify({ mangle: global.ENV === 'production' }))))
+      .pipe(print())
       .pipe(gulp.dest(global.outputDir + datapaths.dataPath + '/js'))
       .pipe(connect.reload())
       .on('end', bundleLogger.end);

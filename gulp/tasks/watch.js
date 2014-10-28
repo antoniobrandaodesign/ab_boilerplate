@@ -22,7 +22,7 @@ gulp.task('watch_files_express', ['setWatch'], function()
 	gulp.watch('core/js/**/*.*', 	['js']);
 	gulp.watch('core/stylus/**/*.*', ['stylus']);
 
-	gulp.watch(["core/jade/**/*.*", "src/jade/**/*.*"], reload);
+	gulp.watch(["src/express/**/*.*", "core/jade/**/*.*", "src/jade/**/*.*"], reload);
 });
 
 gulp.task('watch', ['setDevelopment'], function() 
