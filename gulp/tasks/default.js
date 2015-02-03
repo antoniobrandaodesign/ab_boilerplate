@@ -1,7 +1,7 @@
 var gulp 		= require('gulp');
 var chalk 		= require('chalk');
 
-gulp.task('default', function() 
+gulp.task('info', function() 
 {
 	console.log("");
 	console.log("");
@@ -24,15 +24,6 @@ gulp.task('default', function()
 
 	console.log(chalk.magenta("➜ gulp jade_dev"));
 	console.log(chalk.white.bold("Compiles all Jade files in development mode: not minified"));
-	console.log("");
-
-	console.log(chalk.magenta("➜ gulp stylus_all"));
-	console.log(chalk.white.bold("Compiles all Stylus files in development mode: WITH source maps & not minified"));
-	console.log("");
-
-	console.log(chalk.magenta("➜ gulp stylus_prod"));
-	console.log(chalk.white.bold("Compiles all Stylus files in production mode - WITHOUT source maps & minified"));
-	console.log("");
 
 	console.log(chalk.magenta("➜ gulp js"));
 	console.log(chalk.white.bold("Compiles all JS files in development mode: WITH source maps & not minified"));
@@ -51,18 +42,18 @@ gulp.task('default', function()
 	console.log("");
 
 	console.log(chalk.magenta("➜ gulp build_dev"));
-	console.log(chalk.white.bold('Creates a DEVELOPMENT "build" using the following tasks: stylus_all, js, images'));
-	console.log(chalk.white.bold('- JS and CSS files are compiled WITH source maps'));
-	console.log(chalk.white.bold('- JS and CSS files are compiled WITH source maps'));
-	console.log(chalk.white.bold('- JS and CSS files are readable, NOT compressed'));
+	console.log(chalk.white.bold('Creates a DEVELOPMENT "build" using the following tasks: js, images'));
+	console.log(chalk.white.bold('- JS are compiled WITH source maps'));
+	console.log(chalk.white.bold('- JS are compiled WITH source maps'));
+	console.log(chalk.white.bold('- JS are readable, NOT compressed'));
 	console.log(chalk.white.bold('- Compiled HTML is NOT compressed'));
 	console.log("");
 
 	console.log(chalk.magenta("➜ gulp build_prod"));
 	console.log(chalk.white.bold('Creates a PRODUCTION "build" using the following tasks: stylus_all, js, images'));
-	console.log(chalk.white.bold('- JS and CSS files are compiled WITHOUT source maps'));
+	console.log(chalk.white.bold('- JS are compiled WITHOUT source maps'));
 	console.log(chalk.white.bold('- JS files are compressed and obfuscated'));
-	console.log(chalk.white.bold('- CSS files are compressed'));
+	console.log(chalk.white.bold('- CSS is compressed'));
 	console.log(chalk.white.bold('- Compiled HTML is compressed'));
 	console.log("");
 

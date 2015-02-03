@@ -73,7 +73,7 @@ I will be adding information about the Jade templates structure later.
     - Error reporting and handling
     - Device detection
     - Production-ready Jade structure
-    - Handy information task (simply run "gulp" in project folder to see info & available tasks)
+    - Handy information task (simply run "gulp info" in project folder to see info & available tasks)
 
 ### Installing
 
@@ -94,7 +94,7 @@ I will be adding information about the Jade templates structure later.
     D. open that URL in your browser. you should see a simple responsive website
     E. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
     F. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
-    G. run "gulp" in the console to see available tasks
+    G. run "gulp info" in the console to see available tasks
 
 ### Running (normally)
 
@@ -124,7 +124,6 @@ I will be adding information about the Jade templates structure later.
 
 - I18N
 - Minimal Router
-- Add optional Express.js or Koa
 
 ---------
 
