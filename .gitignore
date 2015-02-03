@@ -1,6 +1,5 @@
 node_modules/
 builds/
-src/
 .DS_Store
 Thumbs.db
 ab_boilerplate.sublime-workspace
