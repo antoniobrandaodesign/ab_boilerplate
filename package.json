@@ -18,8 +18,7 @@
   },
   "browserify": {
     "transform": [
-      "jadeify",
-      "stylify"
+      "jadeify"
     ]
   },
   "dependencies": {

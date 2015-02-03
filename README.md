@@ -8,9 +8,9 @@ Jeet with Rupture and Typographic, done in Stylus and Jade, bundled in a Gulp-ba
 
 Questions in the Issues section please. Contributions to improve this setup are welcome!
 
-Jeet is a great responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, it allows you to create very complex layout flows very quickly with a few minimal lines of code. 
+Jeet is a great responsive framework. Much cleaner, leaner and faster than Bootstrap3. Combined with Rupture and Typographic, it allows you to create complex responsive layout flows very quickly with a few minimal lines of code. 
 
-Why Jeet? We believe that not only style but also layout logic should be independent from markup. Jeet is a hyper simple yet efficient way to apply responsive layout logic to HTML, without even touching HTML files. Everything is done within CSS. Jeet doesn't pollute your HTML with .col-md2.col-lg4.col-etc classes everywhere. It doesn't enforce a specific responsive behaviour to any piece of HTML. In typical Bootstrap code, everytime we want to change responsive behaviour we need to edit HTML files, making code hard to maintain. You shouldn't even be messing about with HTML files in the first place. Since media queries are CSS, responsive work should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
+Why Jeet? We believe that not only style but also layout logic should be independent from markup. Jeet is a hyper simple yet efficient way to apply responsive layout logic to HTML, without even touching HTML files. Everything is done within CSS. Jeet doesn't pollute your HTML with .col-md2.col-lg4.col-etc classes everywhere. It doesn't enforce a specific responsive behaviour to any piece of HTML. In typical Bootstrap code, everytime we want to change responsive behaviour we need to edit HTML files, making code hard to maintain. To implement responsive behaviours, you shouldn't be messing about with HTML files really. Since media queries are CSS, responsive code should stay in CSS. This is what Jeet, Rupture and Typgraphic allow us to accomplish gracefully.
 
 Jeet + Rupture example: How to make a grid that shows 1 element por row in mobile, 2 in tablets, and 3 in desktop? Using Stylus it would be like this:
 
@@ -22,10 +22,7 @@ Jeet + Rupture example: How to make a grid that shows 1 element por row in mobil
         +desktop()
             col(1/3)
 
-That is so simple and readable I'm pretty sure you can understand it even if you can't code. Now, these layout flows can bundled in the form of mixins. The same mixin can be applied to many HTML blocks. The same way many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without having to edit the HTML itself. It's brilliant and super clean. One of the tricks is to create standardised HTML blocks (jade mixins), and standardised responsive behaviour mixins (stylus mixins with jeet & rupture code). Then use them together interchangeably. Notice the power you get!
-
-I will be adding information about the Jade templates structure later.
-
+That is so simple and readable I'm pretty sure you can understand it even if you can't code. These layout flows can bundled in the form of mixins. The same mixin can be applied to many HTML blocks. The same way many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without having to edit the HTML itself. It's brilliant and super clean.
 
 - Tools: 
     - Workflow
@@ -78,50 +75,50 @@ I will be adding information about the Jade templates structure later.
 ### Installing
 
     1. install Node.js
-    2. run "sudo npm install -g gulp" in the console  (sudo is necessary because "-g" is a global installation)
-    3. clone this repository
+    2.  If you don't have Gulp, install it: run "sudo npm install -g gulp" in the console  ("sudo" may be necessary because "-g" is a global installation)
+    3. clone this repository and enter the folder
     4. run "sudo npm install" inside the project folder ("sudo" seems to be necessary for some modules)
-    5. sometimes running "npm install" fails to install everything. 
-        5a. Run "gulp", and if some module is missing, an error will pop up specifying the name of the missing module. 
+    5. sometimes running "npm install" fails to install some dependencies.
+        5a. Run "gulp info", and if some module is missing, an error will pop up specifying the name of the missing module. 
         5b. Copy the module's name and run "npm install the-missing-module-name --save". 
         5c. Repeat the process for each missing module if necessary.
 
 ### Running (first time)
 
-    A. create a "src" folder in the root of the project (can be a Git submodule)
-    B. run "gulp build_dev" to make a development build and have something to work with
-    C. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
-    D. open that URL in your browser. you should see a simple responsive website
-    E. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
-    F. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
-    G. run "gulp info" in the console to see available tasks
+    A. run "gulp build_dev" to make a development build and have something to work with
+    B. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
+    C. open that URL in your browser. you should see a simple responsive website
+    D. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
+    E. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
+    F. run "gulp info" in the console to see available tasks
 
 ### Running (normally)
 
     A. normally when starting work, what you want is to run "gulp watch" and rock on
-    B. run "gulp" in the console to see available tasks
+    B. run "gulp info" in the console to see available tasks
 
 
-### Development and Production tasks: difference
+### Development and Production build tasks: difference
 
-- Production
-    - Build is created in folder /builds/development
-    - JavaScript files are compressed and obfuscated
-    - JavaScript files are compiled WITHOUT source maps
-    - CSS files are compressed
-    - CSS files are compiled WITHOUT source maps
-    - HTML files are compressed
 - Development
     - Build is created in folder /builds/production
     - JavaScript files are compiled WITH source maps
     - JavaScript files are readable, NOT compressed
-    - CSS files are readable, NOT compressed
-    - CSS files are compiled WITH source maps
+    - CSS injected into JavaScript is NOT compressed
+    - CSS injected into JavaScript is compiled WITH source maps
     - HTML files are readable, NOT compressed
+- Production
+    - Build is created in folder /builds/development
+    - JavaScript files are compressed and obfuscated
+    - JavaScript files are compiled WITHOUT source maps
+    - CSS injected into JavaScript is compressed
+    - CSS injected into JavaScript is compiled WITHOUT source maps
+    - HTML files are compressed
 
 
 ### Roadmap
 
+- Provide information about the Jade templates structure
 - I18N
 - Minimal Router
 
@@ -131,7 +128,7 @@ I will be adding information about the Jade templates structure later.
 
 # Available Gulp tasks  
 
-### gulp
+### gulp info
 - Displays information and available tasks
 
 ### gulp watch
@@ -146,7 +143,7 @@ I will be adding information about the Jade templates structure later.
 - Compiles all Jade files in development mode: compressed, not readable
 
 ### gulp js
-- Compiles all JS files in development mode: WITH source maps & not minified
+- Compiles all JS files in development mode: WITH source maps & not minified. CSS is also compiled and ijected in the JS.
 
 ### gulp js_prod
 - Compiles all JS files in production mode: WITHOUT source maps & minified
