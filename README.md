@@ -89,13 +89,12 @@ I will be adding information about the Jade templates structure later.
 ### Running (first time)
 
     A. create a "src" folder in the root of the project (can be a Git submodule)
-    B. for a test drive, copy all the files in "src_example" into the "src" folder
-    C. run "gulp build_dev" to make a development build and have something to work with
-    D. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
-    E. open that URL in your browser. you should see a simple responsive website
-    F. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
-    G. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
-    H. run "gulp" in the console to see available tasks
+    B. run "gulp build_dev" to make a development build and have something to work with
+    C. run "gulp watch". an URL will be displayed in the console (usually http://localhost:3000)
+    D. open that URL in your browser. you should see a simple responsive website
+    E. another URL will also be displayed, which starts with your IP address. open this URL in your phone or tablet
+    F. at this point, when you edit & save Jade Javascript or Stylus files, changes will be reflected in the browser and in all connected devices.
+    G. run "gulp" in the console to see available tasks
 
 ### Running (normally)
 
@@ -146,12 +145,6 @@ I will be adding information about the Jade templates structure later.
 
 ### gulp jade_prod
 - Compiles all Jade files in development mode: compressed, not readable
-
-### gulp stylus_dev
-- Compiles all Stylus files in development mode: WITH source maps & not minified
-
-### gulp stylus_prod
-- Compiles all Stylus files in production mode - WITHOUT source maps & minified
 
 ### gulp js
 - Compiles all JS files in development mode: WITH source maps & not minified
