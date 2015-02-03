@@ -22,7 +22,7 @@ Jeet + Rupture example: How to make a grid that shows 1 element por row in mobil
         +desktop()
             col(1/3)
 
-That is so simple and readable I'm pretty sure you can understand it even if you can't code. These layout flows can bundled in the form of mixins. The same mixin can be applied to many HTML blocks. The same way many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without having to edit the HTML itself. It's brilliant and super clean.
+That is so simple and readable I'm pretty sure you can understand it even if you never used Jeet or Rupture. These layout flows can bundled in the form of mixins. The same mixin can be applied to many HTML blocks. The same way many different mixins can be applied to the same HTML block. This enables us to change the behaviour of HTML blocks without having to edit the HTML itself. It's brilliant and super clean.
 
 - Tools: 
     - Workflow
@@ -43,7 +43,7 @@ That is so simple and readable I'm pretty sure you can understand it even if you
         - Optional [CoffeeScript](http://coffeescript.org)
 
 - Features:
-    - Live development (instant CSS injection, and auto browser reload for HTML and JS)
+    - Live development (auto browser reload for HTML JS and CSS)
     - Test the app in any device in your local network
     - Real-time interaction syncronization between all connected devices
     - Easily call tasks to create either Development and Production builds
@@ -52,24 +52,25 @@ That is so simple and readable I'm pretty sure you can understand it even if you
         - Readable in development tasks
         - Source maps in development tasks
     - CSS
+        - Compiled via Browserify and injected into HEAD
         - Responsive at core
         - Responsive typography
         - Compressed in production tasks
         - Readable in development tasks
-        - Autoprefixer (down to IE7)
         - Source maps in development tasks
+        - Autoprefixed (down to IE7)
     - HTML
-        - Predefined structure for basic building blocks
+        - Predefined Jade structure for basic building blocks
         - Compressed in production tasks
-        - Readable in development tasks
-    - Automatic minification of images (including SVGs)
+        - Uncompressed in development tasks
+        - Jadeify transform included to require ".jade" files via JS
+    - Automatic minification of images, including SVGs
     - Automatic Documentation generation in Markdown format for Flatdoc
     - FTP upload task for FTP deployment, with prompt for username and password
     - Automatic clean-up of build folders before creating builds
     - Tasks print processed file names to console
     - Error reporting and handling
     - Device detection
-    - Production-ready Jade structure
     - Handy information task (simply run "gulp info" in project folder to see info & available tasks)
 
 ### Installing
